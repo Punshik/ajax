@@ -1,0 +1,109 @@
+:root {
+  --suggestion-border: 1px solid #D8D8D8;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  background: url('shift.jpg');
+  font-family: sans-serif;
+  max-width: 100%;
+  overflow: hidden;
+  font-size: 18px;
+}
+
+.form-wrapper {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search-form {
+  width: 800px;
+  margin: 0 50px;
+}
+
+.search {
+  width: 100%;
+  padding: 20px;
+  margin: 0;
+  outline: 0;
+  border: 10px solid #F7F7F7;
+  position: relative;
+  top: 10px;
+  border-radius: 5px;
+  font-size: 40px;
+}
+
+.suggestions {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  border-radius: 0 0 5px 5px;
+}
+
+.suggestions li {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  border-bottom: var(--suggestion-border);
+  margin: 0;
+  padding: 20px;
+  transition: background 0.2s;
+  background-color: white;
+}
+
+.suggestions li:last-child {
+  border-radius: 0 0 5px 5px;
+}
+
+span.population {
+  font-size: 15px;
+}
+
+.match {
+  background-color: yellow;
+}
+
+.infoWindow {
+  background-color: #0039AC;
+  color: white;
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  height: 55%;
+  border-radius: 30%;
+  padding: 20px;
+  box-shadow:1px 1px 68px 100px rgba(0,0,0,0.22);
+  -webkit-box-shadow:1px 1px 68px 100px rgba(0,0,0,0.22);
+  -moz-box-shadow:1px 1px 68px 100px rgba(0,0,0,0.22);
+}
+
+.infoWindow p {
+  font-size: 13px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.infoWindow span {
+  font-family: monospace;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.infoWindow #close1 {
+  width: 150px;
+  height: 30px;
+  margin-top: 20px;
+}
